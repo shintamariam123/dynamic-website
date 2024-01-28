@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!-- css-link -->
+    <link rel="stylesheet" href="login.css">
+    <!-- bootstrap-link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Font awesome link-->
+    <script src="https://kit.fontawesome.com/83cc56892c.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+        <link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
+
+        <link rel="shortcut icon" href="#">
+
+    <!-- font-link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   
+</head>
+
+<body class="body">
+
+
+    <div style="position: relative;" id="main" class="home-img">
+        <!-- navbar -->
+        <div class="navbar navbar-fixed-top navbar-expand-lg ">
+            <div class="container nav">
+                <p
+                    style="font-size: 28px; font-weight: 600; text-decoration: underline;text-decoration-color: #fff;text-decoration-thickness:2px ;">
+                    <span style="color: #882525">CAFE </span><span style="color: #fff;">ROSE</span>
+                </p>
+
+
+                <div class="icon">
+                    <a onclick="register()" ><i  class="fa-solid fa-user"></i></a>
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="registercontent" style="margin-top: 150px; padding-left: 50px;">
+            <h1>Start your day ith a</h1>
+            <h1>fresh coffee</h1>
+            <p>Coffee is a popular and beloved beverage enjoyed by <br>people around the orld.</p>
+            <button >Register</button>
+        </div>
+        <div id="registration" style="position: absolute; top: 130px; bottom: 0px; right: 400px;" class="section">
+            <!-- <div class="container">
+                <div class="row full-height justify-content-center">
+                    <div class="col-12 text-center align-self-center py-5"> -->
+            <div class="section pb-5 pt-5 pt-sm-2 text-center">
+
+            <h6 class="mb-0 pb-3"><span style="color: #fff;">Log In </span><span style="color: #fff;">Sign Up</span>
+            </h6>
+            <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+            <label for="reg-log"></label>
+            <div class="card-3d-wrap mx-auto">
+                <div class="card-3d-wrapper">
+                    <div class="card-front">
+                        <div class="center-wrap">
+                            <div class="section text-center">
+                                <h4 class="mb-4 pb-3" style="color: #882525;">Log In</h4>
+                                <div class="form-group">
+                                    <input type="email" name="logemail" class="form-style" placeholder="Your Email"
+                                        id="logemail" autocomplete="off">
+                                    <i class="input-icon uil uil-at"></i>
+                                    <p id="validmail1" style="font-size: 13px;
+                                    color: #882525;
+                                    margin-left: 150px;">Enter all required fields</p>
+                                    <p id="validmail" style="font-size: 13px;
+                                    color: #882525;
+                                    margin-left: 150px;">Enter valid email address</p>
+                                </div>
+                                <div class="form-group mt-2">
+                                    <input type="password" name="logpass" class="form-style" placeholder="Your Password"
+                                        id="logpass" autocomplete="off">
+                                    <i class="input-icon uil uil-lock-alt"></i>
+                                    <p id="minpsd1" style="font-size: 13px;
+                                    color: #882525;
+                                    margin-left: 203px;">Enter all required fields</p>
+                                    <p id="minpsd" style="font-size: 13px;
+                                    color: #882525;
+                                    margin-left: 203px;">Enter minimum 8 characters</p>
+                                </div>
+                                <a onclick="loginSubmit()" href="#" class="btn mt-4" style="background-color: #882525; color: #fff;">submit</a>
+                                <p class="mb-0 mt-4 text-center" style="font-size: 14px;"><a href="#0"
+                                        class="link">Forgot your
+                                        password?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="center-wrap">
+                            <div class="section text-center">
+                                <h4 class="mb-4 pb-3" style="color: #882525;">Sign Up</h4>
+                                <div class="form-group">
+                                    <input type="text" name="logname" class="form-style" placeholder="Your Full Name"
+                                        id="logname" autocomplete="off">
+                                    <i class="input-icon uil uil-user"></i>
+                                </div>
+                                <div class="form-group mt-2">
+                                    <input type="email" name="logemail" class="form-style" placeholder="Your Email"
+                                        id="logmail" autocomplete="off">
+                                    <i class="input-icon uil uil-at"></i>
+                                </div>
+                                <div class="form-group mt-2">
+                                    <input type="password" name="logpass" class="form-style" placeholder="Your Password"
+                                        id="logepass" autocomplete="off">
+                                    <i class="input-icon uil uil-lock-alt"></i>
+                                </div>
+                                <a onclick="signSubmit()" href="#" class="btn mt-4" style="background-color: #882525; color: #fff;">submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- </div>
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+    <!-- subscribe -->
+    <div style="padding-top: 50px;" class="row">
+        <div class="col-lg-1"></div>
+        
+        <div class="col-lg-4 mt-4">
+
+            <div>
+                <p style="text-align: center;color: #fff;
+                font-size: 1.5rem;
+                font-weight: 700; "><i style="margin-right: 22px;" class="fa-regular fa-clock"></i>OPENING HOURS</p>
+                <div class="d-flex justify-content-evenly text-white ">
+                    <strong>Monday</strong>
+                   <p>10:00 - 22:00</p>
+                </div>
+                <div class="d-flex justify-content-evenly text-white text-justify">
+                    <strong>Tuesday</strong>
+                   <p>10:00 - 22:00</p>
+                </div>
+                <div class="d-flex justify-content-evenly text-white text-justify">
+                    <strong>Wednesday</strong>
+                   <p>10:00 - 22:00</p>
+                </div>
+                <div class="d-flex justify-content-evenly text-white">
+                    <strong>Thursday</strong>
+                   <p>10:00 - 22:00</p>
+                </div>
+                <div class="d-flex justify-content-evenly text-white">
+                    <strong>Friday</strong>
+                   <p>10:00 - 22:00</p>
+                </div>
+                <div class="d-flex justify-content-evenly text-white">
+                    <strong>Satday</strong>
+                   <p>18:00 - 20:00</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+        
+        <div class="col-lg-5 subscribe">
+            <p style="font-size: 45px; color: #fff; font-family: 'Merriweather', serif;">Recieve delicious news!</p>
+    
+                <label id="em" style="color: #fff; font-size: 15px; " for="email">Email*</label>
+                <br>
+                <input style="width: 550px; height: 45px; margin-top: 10px;" type="email" name="" id="email">
+                <br><br>
+                <button id="res" onclick="buttonClick()">Subscribe</button>
+                <div id="mailenter"></div>
+                <div id="output"></div>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+
+
+    
+<!-- footer -->
+   
+    <div style="color: #882525; margin-top: 200px; font-size: 20px; margin-bottom: 20px;" class="text-center">
+        Cafe “ROSE” © 2024 • All Reserved to &reg;
+    </div> 
+
+
+</body>
+
+
+
+<script>
+    const register = () =>{
+        registercontent.style.display="none"
+        registration.style.display="block"
+    }
+    const loginSubmit = () =>{
+        if(logemail.value && logpass.value ){
+            if(logemail.value.endsWith("@gmail.com") ){
+                if (logpass.value.length >= 8){
+                    user = logemail.value
+                     localStorage.setItem("user",user)
+                    window.location="index.html"
+
+                }else{
+                    minpsd.style.display="block"
+                    validmail.style.display="none"
+                    minpsd1.style.display="none"
+                    validmail1.style.display="none"
+                }
+
+            }else{
+                validmail.style.display="block"
+                validmail1.style.display="none"
+                minpsd1.style.display="none"
+                minpsd.style.display="none"
+            }
+
+        }else{
+            
+           
+            minpsd1.style.display="block"
+            validmail1.style.display="block"
+        }
+
+    }
+
+
+    
+    const signSubmit = () =>{
+        if(logname.value && logmail.value && logepass.value ){
+            if(logmail.value.endsWith("@gmail.com") ){
+                if (logepass.value.length>=8){
+
+                    window.location="index.html"
+
+                }else{
+                    alert("Enter minimum 8 characters")
+                }
+
+            }else{
+                alert("Enter valid email address")
+            }
+
+        }else{
+            alert("Enter all required fields")
+        }
+
+    }
+</script>
+</html>

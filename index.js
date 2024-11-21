@@ -52,9 +52,9 @@ persons.value=""
   
        }else{
            alert("Please Login!!!")
-           window.location="login.html"
+           window.location="index.html"
        }
  const logout = () =>{
     localStorage.removeItem("user")
-    window.location="login.html"
+    window.location="index.html"
  }

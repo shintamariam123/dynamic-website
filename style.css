@@ -361,8 +361,9 @@ top: 0px;
   }
 
   .icon i{
-    color: #fff;
+    color: #fff !important;
     margin-left: 20px;
+    font-size: 3rem;
   }
   
  
